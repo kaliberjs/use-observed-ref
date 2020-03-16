@@ -1,0 +1,25 @@
+{
+  "name": "@kaliber/use-observed-ref",
+  "version": "0.0.0",
+  "main": "index.js",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "hook",
+    "observer"
+  ],
+  "files": [
+    "src/**",
+    "LICENSE",
+    "readme.md",
+    "package.json"
+  ],
+  "private": false,
+  "license": "MIT",
+  "description": "This is an internal library to facilitate the use of Observers in hooks.",
+  "repository": "https://github.com/kaliberjs/use-observed-ref.git"
+}
