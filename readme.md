@@ -2,7 +2,7 @@
 This is an internal library to facilitate the use of Observers in hooks
 
 ## Installation
-You typically don't install this library directly.
+You typically don't use this library directly.
 
 ## Usage
 ```jsx
