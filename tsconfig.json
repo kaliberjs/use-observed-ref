@@ -1,32 +1,18 @@
 {
-  "typeAcquisition": {
-    "enable": true
-  },
   "include": [
+    "./index.js",
     "./src/**/*",
-    "./node_modules/**.*",
-    "./types/**/*"
+    "./scripts/**/*"
   ],
   "compilerOptions": {
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "lib": [
-      "dom",
-      "esnext"
-    ],
-    "jsx": "react",
-    "baseUrl": ".",
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "lib": ["DOM", "ESNext"],
+    "jsx": "react-jsx",
+    "allowUmdGlobalAccess": true,
     "allowJs": true,
     "checkJs": true,
     "noEmit": true,
-    "paths": {
-      "/*?universal": [
-        "src/*"
-      ],
-      "/*": [
-        "src/*"
-      ]
-    }
+    "strict": true
   }
 }

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "sideEffects": false,
+  "type": "module",
   "publishConfig": {
     "access": "public"
   },
@@ -13,6 +14,7 @@
     "observer"
   ],
   "files": [
+    "index.js",
     "src/**",
     "LICENSE",
     "readme.md",
@@ -21,5 +23,16 @@
   "private": false,
   "license": "MIT",
   "description": "This is an internal library to facilitate the use of Observers in hooks.",
-  "repository": "https://github.com/kaliberjs/use-observed-ref.git"
+  "repository": "https://github.com/kaliberjs/use-observed-ref.git",
+  "scripts": {
+    "postinstall": "[ -d ./scripts -a -f ./scripts/install-peer-dependencies-for-typescript.js ] && node ./scripts/install-peer-dependencies-for-typescript.js || true"
+  },
+  "devDependencies": {
+    "@kaliber/eslint-plugin": "^1.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  }
 }
